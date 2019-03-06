@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Crop {
+public abstract class Crop implements Produce {
+    public boolean hasBeenHarvested;
+
 }

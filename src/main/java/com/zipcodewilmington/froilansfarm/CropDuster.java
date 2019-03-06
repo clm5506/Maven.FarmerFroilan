@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class CropDuster extends FarmVehicle implements Aircraft {
-    public void makeNoise() {
+    public String makeNoise() {
 
     }
 

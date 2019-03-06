@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Produce extends Edible {
-    void yield();
+public interface Produce {
+
+     <T extends Edible> T yield();
 }
