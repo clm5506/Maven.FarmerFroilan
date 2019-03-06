@@ -1,13 +1,11 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Rider implements Rideable {
-    public void mount() {
+public class Rider {
+    public void mount(Rideable rideable) {
     }
 
-    public void unmount() {
+    public void unmount(Rideable rideable) {
     }
 
-    public void ride() {
 
-    }
 }
