@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.List;
+
 public class Stable extends Container {
-    public java.util.ArrayList<Horse> horseStable;
+    public List<Horse> horseStable;
 }

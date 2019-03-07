@@ -3,7 +3,8 @@ package com.zipcodewilmington.froilansfarm;
 import java.util.List;
 
 public class Farm {
-    public List<Stable> farmCollection;
-    public List<ChickenCoop> chickenCoops;
-    public List<FarmHouse> farmHouse;
+    private Field field;
+    private Stable stable;
+    private ChickenCoop chickenCoops;
+    private FarmHouse farmHouse;
 }

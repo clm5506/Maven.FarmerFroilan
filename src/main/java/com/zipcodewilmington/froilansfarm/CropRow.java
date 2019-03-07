@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.List;
+
 public class CropRow extends Container {
-    public java.util.ArrayList<Crop> cropRow;
+    public List<Crop> cropRow;
 }

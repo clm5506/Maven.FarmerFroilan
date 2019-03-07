@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.List;
+
 public class FarmHouse extends Container {
-    public java.util.ArrayList<Person> personList;
+    public List<Person> personList;
 }
