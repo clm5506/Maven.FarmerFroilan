@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm;
 public class CropDuster extends FarmVehicle implements Aircraft {
     public String makeNoise() {
 
-        return null;
+        return "Woooosh";
     }
 
     public void fertilize(CropRow cropRow) {

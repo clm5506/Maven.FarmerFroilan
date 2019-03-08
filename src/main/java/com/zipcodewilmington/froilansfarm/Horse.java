@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Horse extends Animal implements Rideable {
 
     public String makeNoise() {
-        return null;
+        return "Neigh";
     }
 
     public void eat(Edible edible) {
@@ -13,6 +13,6 @@ public class Horse extends Animal implements Rideable {
     }
 
     public ArrayList getStomachContents() {
-        return null;
+        return new ArrayList();
     }
 }

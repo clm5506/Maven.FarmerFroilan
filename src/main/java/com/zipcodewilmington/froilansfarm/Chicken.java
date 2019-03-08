@@ -8,7 +8,7 @@ public class Chicken extends Animal implements Produce {
     }
 
     public String makeNoise() {
-        return null;
+        return "Bawk Bawk";
     }
 
     public void eat(Edible edible) {
@@ -16,6 +16,6 @@ public class Chicken extends Animal implements Produce {
     }
 
     public ArrayList getStomachContents() {
-        return null;
+        return new ArrayList();
     }
 }

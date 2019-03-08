@@ -5,6 +5,6 @@ public class FarmVehicle implements Vehicle {
     }
 
     public String makeNoise() {
-        return null;
+        return "Beep Beep";
     }
 }
