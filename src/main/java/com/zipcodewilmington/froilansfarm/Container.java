@@ -1,9 +1,14 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Container<T> {
-    private java.util.List<T> list;
+    private List<T> list;
+
+    public Container() {
+        this.list = new ArrayList<T>();
+    }
 
     public void add(T t) {
         list.add(t);
