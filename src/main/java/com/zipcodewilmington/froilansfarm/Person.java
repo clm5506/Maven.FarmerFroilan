@@ -8,11 +8,11 @@ public class Person extends Animal {
     }
 
     public ArrayList getStomachContents() {
-        return null;
+        return new ArrayList();
     }
 
     public String makeNoise() {
 
-        return null;
+        return "Howdy";
     }
 }
