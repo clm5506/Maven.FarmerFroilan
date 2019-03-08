@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Horse extends Animal implements Rideable {
 
+    boolean hasBeenRidden = false;
+
     public String makeNoise() {
         return "Neigh";
     }
