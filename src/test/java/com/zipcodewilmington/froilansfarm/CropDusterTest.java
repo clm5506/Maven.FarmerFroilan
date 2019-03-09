@@ -22,6 +22,16 @@ public class CropDusterTest {
 
     @Test
     public void testfertilize() {
+        //Given
+        CropRow cropRow = new CropRow();
+        boolean expectedResult = true;
+
+        //When
+        cropRow.setHasFertilized(true);
+        boolean actualResult = cropRow.getHasFertilized();
+
+        //Then
+        Assert.assertEquals(expectedResult,actualResult);
     }
 
     @Test
