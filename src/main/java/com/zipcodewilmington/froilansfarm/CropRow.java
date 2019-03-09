@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm;
 
 import java.util.ArrayList;
 
-public class CropRow extends Container {
+public class CropRow extends Container<Crop> {
 
     private boolean hasFertilized = false;
 
