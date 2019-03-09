@@ -12,7 +12,8 @@ public class FarmVehicle implements Vehicle {
     }
 
     public void setRideStatus(boolean hasBeenRidden) {
-    this.hasBeenRidden = hasBeenRidden;
+
+        this.hasBeenRidden = hasBeenRidden;
     }
 
     public boolean getRideStatus() {
