@@ -7,9 +7,9 @@ import static org.junit.Assert.*;
 
 public class TractorTest {
 
-    @Test
+    /*@Test
     public void testharvest() {
-        //Given
+    *//*    //Given
         Tractor tractor = new Tractor();
         CropRow cropRow= new CropRow();
         TomatoPlant tomato = new TomatoPlant();
@@ -24,5 +24,5 @@ public class TractorTest {
 
         //Then
         Assert.assertEquals(expectedSize,actualSize);
-    }
+    }*/
 }
