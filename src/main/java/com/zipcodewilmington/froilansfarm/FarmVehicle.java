@@ -1,11 +1,11 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class FarmVehicle implements Vehicle {
+public abstract class FarmVehicle implements Vehicle {
 
     private boolean hasBeenRidden = false;
+   // private boolean operateOnFarm = false;
 
-    public void operate(Farm farm) {
-    }
+    public abstract void operate(Farm farm);
 
     public String makeNoise() {
         return "Beep Beep";

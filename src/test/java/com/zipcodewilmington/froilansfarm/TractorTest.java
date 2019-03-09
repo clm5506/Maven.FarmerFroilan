@@ -14,7 +14,7 @@ public class TractorTest {
         CropRow cropRow= new CropRow();
         TomatoPlant tomato = new TomatoPlant();
         cropRow.add(tomato);
-        Field field = new Field();
+       Field field = new Field();
 
         int expectedSize =0;
 
