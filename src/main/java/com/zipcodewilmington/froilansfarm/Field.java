@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Field extends Container {
+public class Field extends Container<CropRow> {
     public List<CropRow> fieldCropRow;
 
     private boolean flyOverTheField = false;

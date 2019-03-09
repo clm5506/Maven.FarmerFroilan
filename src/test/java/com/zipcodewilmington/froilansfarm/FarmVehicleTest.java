@@ -16,7 +16,7 @@ public class FarmVehicleTest {
         //Then
     }
 
-    @Test
+   /* @Test
     public void testmakeNoise() {
         //Given
         FarmVehicle farmVehicle = new FarmVehicle();
@@ -41,6 +41,6 @@ public class FarmVehicleTest {
 
         //Then
         Assert.assertEquals(expectedResult,actualResult);
-    }
+    }*/
 
 }
