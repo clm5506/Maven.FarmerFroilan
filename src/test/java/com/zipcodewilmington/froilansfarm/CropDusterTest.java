@@ -25,9 +25,10 @@ public class CropDusterTest {
         //Given
         CropRow cropRow = new CropRow();
         boolean expectedResult = true;
+        CropDuster cropDuster = new CropDuster();
 
         //When
-        cropRow.setHasFertilized(true);
+        cropDuster.fertilize(cropRow);
         boolean actualResult = cropRow.getHasFertilized();
 
         //Then
@@ -36,5 +37,16 @@ public class CropDusterTest {
 
     @Test
     public void testfly() {
+        //Given
+        Field field = new Field();
+        boolean expectedResult = true;
+        CropDuster cropDuster = new CropDuster();
+
+        //When
+        cropDuster.fly(field);
+        boolean actualResult = field.getFlyOverTheField();
+
+        //Then
+        Assert.assertEquals(expectedResult,actualResult);
     }
 }

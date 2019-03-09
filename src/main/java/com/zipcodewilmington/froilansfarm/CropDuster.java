@@ -7,9 +7,10 @@ public class CropDuster extends FarmVehicle implements Aircraft {
     }
 
     public void fertilize(CropRow cropRow) {
+        cropRow.setHasFertilized(true);
     }
 
-    public void fly() {
-
+    public void fly(Field field) {
+        field.setFlyOverTheField(true);
     }
 }
