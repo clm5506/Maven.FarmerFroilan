@@ -12,7 +12,7 @@ public class TractorTest {
         //Given
         Tractor tractor = new Tractor();
         CropRow cropRow= new CropRow();
-        Tomato tomato = new Tomato();
+        TomatoPlant tomato = new TomatoPlant();
         cropRow.add(tomato);
         Field field = new Field();
 
