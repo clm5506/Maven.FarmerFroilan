@@ -11,13 +11,6 @@ public class Horse extends Animal implements Rideable {
         return "Neigh";
     }
 
-    public void eat(Edible edible) {
-    }
-
-    public List getStomachContents() {
-        return new ArrayList();
-    }
-
     public void setRideStatus(boolean horseHasBeenRidden) {
         this.hasBeenRidden = horseHasBeenRidden;
     }
