@@ -3,13 +3,14 @@ package com.zipcodewilmington.froilansfarm;
 import java.util.ArrayList;
 
 public class CropRow extends Container {
-    
-    private boolean hasFertilized=false;
+
+    private boolean hasFertilized = false;
+
     public boolean getHasFertilized() {
         return hasFertilized;
     }
     public void setHasFertilized(boolean hasFertilizedFlag) {
-        this.hasFertilized=hasFertilizedFlag;
+        this.hasFertilized = hasFertilizedFlag;
     }
 
 }
