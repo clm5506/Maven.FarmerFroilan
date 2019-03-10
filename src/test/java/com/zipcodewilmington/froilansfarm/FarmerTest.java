@@ -83,4 +83,101 @@ public class FarmerTest {
         //Then
         Assert.assertTrue(horses.get(lastIndexOfHorses).getRideStatus());
     }
+    @Test
+    public void testsundayChoreCropRow1(){
+        //Given
+        Farmer froilan = new Farmer();
+
+        //When
+        froilan.sundayChore();
+        CropRow cropRow = froilan.getFarm().getField().getList().get(0);
+
+        //Then
+        Assert.assertEquals(2,cropRow.size());
+    }
+    @Test
+    public void testsundayChoreCropRow2(){
+        //Given
+        Farmer froilan = new Farmer();
+
+        //When
+        froilan.sundayChore();
+        CropRow cropRow = froilan.getFarm().getField().getList().get(1);
+
+        //Then
+        Assert.assertEquals(2,cropRow.size());
+    }
+    @Test
+    public void testsundayChoreCropRow3(){
+        //Given
+        Farmer froilan = new Farmer();
+
+        //When
+        froilan.sundayChore();
+        CropRow cropRow = froilan.getFarm().getField().getList().get(2);
+
+        //Then
+        Assert.assertEquals(2,cropRow.size());
+    }
+    @Test
+    public void testFly(){
+        //Given
+        Pilot pilot = new Pilot();
+        Farm farm=  new Farm();
+
+        //When
+        pilot.mondayChores(farm);
+        boolean actualResult = farm.getField().getFlyOverTheField();
+
+        //Then
+        Assert.assertEquals(true,actualResult);
+
+    }
+    @Test
+    public void testFertilizedFirstRow(){
+        //Given
+        Pilot pilot = new Pilot();
+        Farm farm=  new Farm();
+
+        //When
+        pilot.mondayChores(farm);
+        CropRow cropRow = farm.getField().getList().get(0);
+        boolean actualResult = cropRow.getHasFertilized();
+
+        //Then
+        Assert.assertEquals(true,actualResult);
+
+    }
+    @Test
+    public void testFertilizedLastRow(){
+        //Given
+        Pilot pilot = new Pilot();
+        Farm farm=  new Farm();
+
+        //When
+        pilot.mondayChores(farm);
+        CropRow cropRow = farm.getField().getList().get(4);
+        boolean actualResult = cropRow.getHasFertilized();
+
+        //Then
+        Assert.assertEquals(true,actualResult);
+
+    }
+    @Test
+    public void testTuesdayChores(){
+        //Given
+        Farmer froilan=  new Farmer();
+       // int beforeResult = froilan.getFarm().getField().size();
+
+        //When
+        froilan.tuesdayChores();
+       // int actualResult = froilan.getFarm().getField().size();
+        List<CropRow> cropRowList = froilan.getFarm().getField().getList();
+        CropRow cropRow = cropRowList.get(0);
+        int actualResult = cropRow.size();
+
+        //Then
+        //Assert.assertEquals(5,beforeResult);
+        Assert.assertEquals(0,actualResult);
+    }
 }

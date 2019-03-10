@@ -7,11 +7,8 @@ public class Tractor extends FarmVehicle {
     public void harvest(CropRow cropRow) {
 
         List<Crop> listToBeRemoved = cropRow.getList();
-
         cropRow.getList().removeAll(listToBeRemoved);
-//        for (Crop c : cropRow.getList()){
-//            cropRow.remove(c);
-//        }
+
     }
 
     public void operate(Farm farm) {

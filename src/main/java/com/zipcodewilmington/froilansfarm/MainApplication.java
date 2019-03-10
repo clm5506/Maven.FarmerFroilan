@@ -5,6 +5,11 @@ package com.zipcodewilmington.froilansfarm;
  */
 public class MainApplication {
     public static void main(String[] args) {
+       Farmer froilan = new Farmer();
+       Pilot froilanda = new Pilot();
+       froilan.sundayChore();
+       froilanda.mondayChores(froilan.getFarm());
+       froilan.tuesdayChores();
 
     }
 

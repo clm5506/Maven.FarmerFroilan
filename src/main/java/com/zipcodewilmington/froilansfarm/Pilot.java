@@ -35,4 +35,10 @@ public class Pilot extends Person  {
     public void unmount(Rideable rideable) {
             rideable.setRideStatus(false);
     }
+
+    public void mondayChores(Farm farm){
+        doMorningChores(farm);
+        CropDuster cropDuster=farm.getCropDuster();
+        cropDuster.fly(farm.getField());
+    }
 }
