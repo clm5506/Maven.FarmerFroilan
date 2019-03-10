@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.zipcodewilmington.froilansfarm.vehicles.Rideable;
 
 public class Horse extends Animal implements Rideable {
 

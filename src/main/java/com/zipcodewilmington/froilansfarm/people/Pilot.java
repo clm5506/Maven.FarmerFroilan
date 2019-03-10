@@ -1,5 +1,9 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.produce.EarCorn;
+import com.zipcodewilmington.froilansfarm.produce.Egg;
+import com.zipcodewilmington.froilansfarm.produce.Tomato;
+
 import java.util.ArrayList;
 
 public class Pilot extends Person  {

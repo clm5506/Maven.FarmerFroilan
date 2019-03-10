@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-import java.util.List;
+import com.zipcodewilmington.froilansfarm.people.Person;
 
 public class FarmHouse extends Container<Person> {
 

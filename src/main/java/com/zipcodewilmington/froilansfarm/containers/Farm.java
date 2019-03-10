@@ -1,7 +1,17 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.containers.ChickenCoop;
+import com.zipcodewilmington.froilansfarm.containers.FarmHouse;
+import com.zipcodewilmington.froilansfarm.containers.Field;
+import com.zipcodewilmington.froilansfarm.containers.Stable;
+import com.zipcodewilmington.froilansfarm.produce.CornStalk;
+import com.zipcodewilmington.froilansfarm.produce.CropRow;
+import com.zipcodewilmington.froilansfarm.produce.OtherVegetation;
+import com.zipcodewilmington.froilansfarm.produce.TomatoPlant;
+import com.zipcodewilmington.froilansfarm.vehicles.CropDuster;
+import com.zipcodewilmington.froilansfarm.vehicles.Tractor;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Farm {
 
@@ -22,8 +32,7 @@ public class Farm {
     private CropRow fourthCropRow;
     private CropRow fifthCropRow;
 
-
-    Farm() {
+    public Farm() {
         this.field = new Field();
         this.farmHouse = new FarmHouse();
         this.tractor = new Tractor();

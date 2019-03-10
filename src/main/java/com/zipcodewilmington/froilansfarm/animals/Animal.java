@@ -1,5 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.people.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.produce.Edible;
+
 import java.util.ArrayList;
 import java.util.List;
 

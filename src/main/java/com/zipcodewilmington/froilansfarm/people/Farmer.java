@@ -1,7 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.produce.*;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Farmer extends Person implements Rider, Botanist {
     boolean hasRodeAllHorses;
