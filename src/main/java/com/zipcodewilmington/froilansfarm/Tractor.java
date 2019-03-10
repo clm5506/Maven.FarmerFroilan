@@ -1,17 +1,24 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.List;
+
 public class Tractor extends FarmVehicle {
+
     public void harvest(CropRow cropRow) {
 
-//        Field field = new Field();
-//        field.fieldCropRow.add(cropRow);
-//
-//        field.fieldCropRow.remove(cropRow);
+        List<Crop> listToBeRemoved = cropRow.getList();
 
-        cropRow.getList().size();
+        cropRow.getList().removeAll(listToBeRemoved);
+//        for (Crop c : cropRow.getList()){
+//            cropRow.remove(c);
+//        }
     }
 
     public void operate(Farm farm) {
+            List<CropRow> cropRowsInField = farm.getField().getList();
 
+        for (CropRow cr : cropRowsInField) {
+            harvest(cr);
+        }
     }
 }

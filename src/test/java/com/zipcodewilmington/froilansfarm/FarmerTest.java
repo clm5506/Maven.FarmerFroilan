@@ -24,6 +24,7 @@ public class FarmerTest {
         //When
         testFarmer.eat(edibleTomato);
         List fakeStomach = new ArrayList<Edible>();
+
         fakeStomach.add(edibleTomato);
         //Then
         Assert.assertEquals(fakeStomach, testFarmer.getStomachContents());

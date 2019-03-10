@@ -5,80 +5,119 @@ import java.util.List;
 public class Farm {
 
     private Field field;
-    private Stable stable;
-    private ChickenCoop chickenCoops;
     private FarmHouse farmHouse;
+    private CropDuster cropDuster;
+    private Tractor tractor;
+    private Stable stableOne;
+    private Stable stableTwo;
+    private Stable stableThree;
+    private ChickenCoop firstChickenCoop;
+    private ChickenCoop secondChickenCoop;
+    private ChickenCoop thirdChickenCoop;
+    private ChickenCoop fourthChickenCoop;
+    private CropRow firstCropRow;
+    private CropRow secondCropRow;
+    private CropRow thirdCropRow;
+    private CropRow fourthCropRow;
+    private CropRow fifthCropRow;
 
-    Farm(){
+
+    Farm() {
         this.field = new Field();
+        this.farmHouse = new FarmHouse();
+        this.tractor = new Tractor();
+        this.cropDuster = new CropDuster();
+        this.firstChickenCoop = new ChickenCoop();
+        this.secondChickenCoop = new ChickenCoop();
+        this.thirdChickenCoop = new ChickenCoop();
+        this.fourthChickenCoop = new ChickenCoop();
+        this.firstCropRow = new CropRow();
+        this.secondCropRow = new CropRow();
+        this.thirdCropRow = new CropRow();
+        this.fourthCropRow = new CropRow();
+        this.fifthCropRow = new CropRow();
+        this.stableOne = new Stable();
+        this.stableTwo = new Stable();
+        this.stableThree = new Stable();
         populateField();
-        this.chickenCoops = new ChickenCoop();
         populateChickenCoop();
+        populateStables();
     }
-    public void populateField(){
-        CropRow cropRow1= new CropRow();
-        CornStalk cornStalk1 = new CornStalk();
-        cropRow1.add(cornStalk1);
 
-        CropRow cropRow2= new CropRow();
-        TomatoPlant tomatoPlant2 = new TomatoPlant();
-        cropRow2.add(tomatoPlant2);
+    public void populateField() {
 
-        CropRow cropRow3= new CropRow();
-        OtherVegetation otherVegetation = new OtherVegetation();
-        cropRow3.add(otherVegetation);
+        firstCropRow.add(new CornStalk());
+        secondCropRow.add(new TomatoPlant());
+        thirdCropRow.add(new OtherVegetation());
+        fourthCropRow.add(new OtherVegetation());
+        fifthCropRow.add(new OtherVegetation());
 
-        CropRow cropRow4= new CropRow();
-        OtherVegetation otherVegetation4 = new OtherVegetation();
-        cropRow3.add(otherVegetation);
-
-        CropRow cropRow5= new CropRow();
-        OtherVegetation otherVegetation5 = new OtherVegetation();
-        cropRow3.add(otherVegetation);
-
-        this.field.add(cropRow1);
-        this.field.add(cropRow2);
-        this.field.add(cropRow3);
-        this.field.add(cropRow4);
-        this.field.add(cropRow5);
-
+        this.field.add(firstCropRow);
+        this.field.add(secondCropRow);
+        this.field.add(thirdCropRow);
+        this.field.add(fourthCropRow);
+        this.field.add(fifthCropRow);
     }
-    public void populateChickenCoop(){
 
+    public void populateChickenCoop() {
+        for (int i = 0; i < 4; i++) {
+            firstChickenCoop.add(AnimalFactory.createChicken());
+            secondChickenCoop.add(AnimalFactory.createChicken());
+            thirdChickenCoop.add(AnimalFactory.createChicken());
+        }
+        for (int i = 0; i < 3; i++) {
+            fourthChickenCoop.add(AnimalFactory.createChicken());
+        }
     }
-    public void populateStable(){}
-    public void populateVehicles(){}
+
+    public void populateStables() {
+        for(int i = 0; i < 3; i++){
+           stableOne.add(new Horse());
+           stableTwo.add(new Horse());
+           stableThree.add(new Horse());
+        }
+           stableThree.add(new Horse());
+    }
 
     public Field getField() {
-        return field;
+        return this.field;
     }
 
-    public void setField(Field field) {
-        this.field = field;
+    public CropDuster getCropDuster(){
+        return this.cropDuster;
     }
 
-    public Stable getStable() {
-        return stable;
+    public Tractor getTractor(){
+        return this.tractor;
     }
 
-    public void setStable(Stable stable) {
-        this.stable = stable;
+    public Stable getStableOne() {
+        return this.stableOne;
     }
 
-    public ChickenCoop getChickenCoops() {
-        return chickenCoops;
+    public Stable getStableTwo(){
+        return this.stableTwo;
     }
 
-    public void setChickenCoops(ChickenCoop chickenCoops) {
-        this.chickenCoops = chickenCoops;
+    public Stable getStableThree(){
+        return this.stableThree;
     }
-
     public FarmHouse getFarmHouse() {
-        return farmHouse;
+        return this.farmHouse;
     }
-
-    public void setFarmHouse(FarmHouse farmHouse) {
-        this.farmHouse = farmHouse;
+    public ChickenCoop getFirstChickenCoop(){
+        return this.firstChickenCoop;
+    }
+    public ChickenCoop getSecondChickenCoop(){
+        return this.secondChickenCoop;
+    }
+    public ChickenCoop getThirdChickenCoop(){
+        return this.thirdChickenCoop;
+    }
+    public ChickenCoop getFourthChickenCoop(){
+        return this.fourthChickenCoop;
     }
 
 }
+
+
