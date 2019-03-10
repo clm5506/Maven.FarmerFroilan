@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Farm {
@@ -72,12 +73,13 @@ public class Farm {
 
     public void populateStables() {
         for(int i = 0; i < 3; i++){
-           stableOne.add(new Horse());
-           stableTwo.add(new Horse());
-           stableThree.add(new Horse());
+           stableOne.add(AnimalFactory.createHorse());
+           stableTwo.add(AnimalFactory.createHorse());
+           stableThree.add(AnimalFactory.createHorse());
         }
-           stableThree.add(new Horse());
+           stableThree.add(AnimalFactory.createHorse());
     }
+
 
     public Field getField() {
         return this.field;
@@ -102,21 +104,39 @@ public class Farm {
     public Stable getStableThree(){
         return this.stableThree;
     }
+
     public FarmHouse getFarmHouse() {
         return this.farmHouse;
     }
+
     public ChickenCoop getFirstChickenCoop(){
         return this.firstChickenCoop;
     }
+
     public ChickenCoop getSecondChickenCoop(){
         return this.secondChickenCoop;
     }
+
     public ChickenCoop getThirdChickenCoop(){
         return this.thirdChickenCoop;
     }
+
     public ChickenCoop getFourthChickenCoop(){
         return this.fourthChickenCoop;
     }
+
+
+    public ArrayList<Horse> getHorses() {
+
+        ArrayList<Horse> horses = new ArrayList<Horse>();
+
+        horses.addAll(stableOne.getList());
+        horses.addAll(stableTwo.getList());
+        horses.addAll(stableThree.getList());
+
+        return horses;
+    }
+
 
 }
 
