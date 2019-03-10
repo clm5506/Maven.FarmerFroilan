@@ -70,4 +70,17 @@ public class FarmerTest {
         Assert.assertEquals(fakeCropRow, cropRow.getList());
     }
 
+    @Test
+    public void testDoChores(){
+        //Given
+        Farmer froilan = new Farmer();
+
+        //When
+        froilan.doMorningChores(froilan.getFarm());
+        ArrayList<Horse> horses = froilan.getFarm().getHorses();
+        int lastIndexOfHorses = horses.size()-1;
+
+        //Then
+        Assert.assertTrue(horses.get(lastIndexOfHorses).getRideStatus());
+    }
 }
