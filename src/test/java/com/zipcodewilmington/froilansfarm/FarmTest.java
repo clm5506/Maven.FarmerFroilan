@@ -180,4 +180,28 @@ public class FarmTest {
         Assert.assertThat(farm.getStableThree().getList().get(0), instanceOf(Horse.class));
     }
 
+    @Test
+    public void testGetCropDuster(){
+        //Given
+        Farm farm = new Farm();
+        //Then
+        Assert.assertThat(farm.getCropDuster(), instanceOf(FarmVehicle.class));
+    }
+
+    @Test
+    public void testGetTractor(){
+        //Given
+        Farm farm = new Farm();
+        //Then
+        Assert.assertThat(farm.getTractor(), instanceOf(FarmVehicle.class));
+    }
+
+    @Test
+    public void testGetFarmHouse(){
+        //Given
+        Farm farm = new Farm();
+        //Then
+        Assert.assertThat(farm.getFarmHouse(), instanceOf(FarmHouse.class));
+    }
+
 }

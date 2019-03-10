@@ -5,6 +5,9 @@ import java.util.List;
 public class Farm {
 
     private Field field;
+    private FarmHouse farmHouse;
+    private CropDuster cropDuster;
+    private Tractor tractor;
     private Stable stableOne;
     private Stable stableTwo;
     private Stable stableThree;
@@ -17,10 +20,13 @@ public class Farm {
     private CropRow thirdCropRow;
     private CropRow fourthCropRow;
     private CropRow fifthCropRow;
-    private FarmHouse farmHouse;
+
 
     Farm() {
         this.field = new Field();
+        this.farmHouse = new FarmHouse();
+        this.tractor = new Tractor();
+        this.cropDuster = new CropDuster();
         this.firstChickenCoop = new ChickenCoop();
         this.secondChickenCoop = new ChickenCoop();
         this.thirdChickenCoop = new ChickenCoop();
@@ -73,42 +79,43 @@ public class Farm {
            stableThree.add(new Horse());
     }
 
-    public void populateVehicles() {
-    }
-
     public Field getField() {
-        return field;
+        return this.field;
     }
 
-    public void setField(Field field) {
-        this.field = field;
+    public CropDuster getCropDuster(){
+        return this.cropDuster;
+    }
+
+    public Tractor getTractor(){
+        return this.tractor;
     }
 
     public Stable getStableOne() {
-        return stableOne;
+        return this.stableOne;
     }
 
     public Stable getStableTwo(){
-        return stableTwo;
+        return this.stableTwo;
     }
 
     public Stable getStableThree(){
-        return stableThree;
+        return this.stableThree;
     }
     public FarmHouse getFarmHouse() {
-        return farmHouse;
+        return this.farmHouse;
     }
     public ChickenCoop getFirstChickenCoop(){
-        return firstChickenCoop;
+        return this.firstChickenCoop;
     }
     public ChickenCoop getSecondChickenCoop(){
-        return secondChickenCoop;
+        return this.secondChickenCoop;
     }
     public ChickenCoop getThirdChickenCoop(){
-        return thirdChickenCoop;
+        return this.thirdChickenCoop;
     }
     public ChickenCoop getFourthChickenCoop(){
-        return fourthChickenCoop;
+        return this.fourthChickenCoop;
     }
 
 }
